@@ -1,0 +1,15 @@
+org\example\fieldsmanagement\Equipment\domain\Equipment.class
+org\example\fieldsmanagement\Equipment\infrastructure\EquipmentRepository.class
+org\example\fieldsmanagement\field\domain\Field.class
+org\example\fieldsmanagement\field\domain\FieldType.class
+org\example\fieldsmanagement\Equipment\domain\EquipmentService.class
+org\example\fieldsmanagement\comments\domain\Comments.class
+org\example\fieldsmanagement\Equipment\domain\EquipmentType.class
+org\example\fieldsmanagement\field\domain\FieldService.class
+org\example\fieldsmanagement\comments\domain\CommentsService.class
+org\example\fieldsmanagement\field\infrastructure\FieldRepository.class
+org\example\fieldsmanagement\Equipment\application\EquipmentController.class
+org\example\fieldsmanagement\field\application\FieldController.class
+org\example\fieldsmanagement\FieldsManagementApplication.class
+org\example\fieldsmanagement\comments\infrastructure\CommentsRepository.class
+org\example\fieldsmanagement\comments\application\CommentsController.class
