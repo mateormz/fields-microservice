@@ -41,6 +41,11 @@ public class FieldService {
         fieldRepository.save(field);
     }
 
+    public Field findFieldById(Long fieldId) {
+        return fieldRepository.findById(fieldId)
+                .orElseThrow(() -> new RuntimeException("There is no field with id " + fieldId));
+    }
+
     public Field updateField(Long fieldId, Field updatedField) {
         Field existingField = fieldRepository.findById(fieldId)
                 .orElseThrow(() -> new RuntimeException("There is no field with id " + fieldId));

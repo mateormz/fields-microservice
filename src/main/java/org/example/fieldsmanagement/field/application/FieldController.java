@@ -20,6 +20,13 @@ public class FieldController {
         return ResponseEntity.ok(fieldService.findAll());
     }
 
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Field> getFieldById(@PathVariable Long id) {
+        Field field = fieldService.findFieldById(id);
+        return ResponseEntity.ok(field);
+    }
+
     @PostMapping("/create")
     public ResponseEntity<Field> createField(@RequestBody Field field) {
         Field savedField = fieldService.createField(field);

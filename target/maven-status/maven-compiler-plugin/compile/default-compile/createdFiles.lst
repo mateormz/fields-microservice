@@ -1,5 +1,6 @@
 org\example\fieldsmanagement\Equipment\domain\Equipment.class
 org\example\fieldsmanagement\Equipment\infrastructure\EquipmentRepository.class
+org\example\fieldsmanagement\CorsConfig\WebConfig.class
 org\example\fieldsmanagement\field\domain\Field.class
 org\example\fieldsmanagement\field\domain\FieldType.class
 org\example\fieldsmanagement\Equipment\domain\EquipmentService.class
