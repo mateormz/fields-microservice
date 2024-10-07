@@ -9,24 +9,20 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/comments")
 public class CommentsController {
 
     @Autowired
     private CommentsService commentsService;
 
-    @GetMapping("/")
-    public ResponseEntity<String> welcomeApi() {
-        String welcome = "welcome to fieldsmanagement";
-        return  ResponseEntity.ok(welcome);
-    }
 
-    @PostMapping("/comments/create")
+    @PostMapping("/create")
     public ResponseEntity<Comments> createComment(@RequestBody Comments comment) {
         Comments savedComment = commentsService.createComment(comment);
         return ResponseEntity.ok(savedComment);
     }
 
-    @GetMapping("/comments/field/{fieldId}")
+    @GetMapping("/field/{fieldId}")
     public ResponseEntity<List<Comments>> getCommentsByFieldId(@PathVariable Long fieldId) {
         List<Comments> comments = commentsService.getCommentsByFieldId(fieldId);
         return ResponseEntity.ok(comments);
