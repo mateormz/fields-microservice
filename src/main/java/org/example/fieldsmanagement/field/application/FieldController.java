@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/field")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class FieldController {
 
     @Autowired
